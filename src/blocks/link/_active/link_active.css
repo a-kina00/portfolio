@@ -1,0 +1,3 @@
+:global(.link_active) {
+    background-size: 100% 1px;
+}

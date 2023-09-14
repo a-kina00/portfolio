@@ -1,0 +1,23 @@
+:global(.button) {
+    width: 270px;
+    height: 100px;
+
+    background-color: transparent;
+    text-align: center;
+    border: 2px solid;
+
+    transition: transform .5s;
+}
+
+:global(.button:not(.button_unactive):hover) {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+:global(.button_theme_light) {
+    border-color: #d4a373;
+}
+
+:global(.button_theme_dark) {
+    border-color: #415a77;
+}

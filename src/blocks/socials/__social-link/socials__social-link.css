@@ -1,0 +1,20 @@
+.socials__social-link {
+    padding-left: 0;
+    width: 47px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform .2s linear;
+}
+
+.socials__social-link:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,24 @@
+:global(.link) {
+    position: relative;
+
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 1px 0;
+
+    text-transform: uppercase;
+
+    transition: all .3s linear;
+    scale: .9;
+}
+
+:global(.link:hover) {
+    background-size: 100% 1px;
+    scale: 1;
+}
+
+:global(.link:focus) {
+    background-size: 100% 1px;
+    scale: 1;
+}

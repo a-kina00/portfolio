@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap');
+
+@import url('../blocks/text/text.css');
+@import url('../blocks/text/_theme/text_theme.css');
+@import url('../blocks/text/_size/text_size.css');
+
+@import url('../blocks/link/link.css');
+@import url('../blocks/link/_active/link_active.css');
+
+@import url('../blocks/float/float.css');
+@import url('../blocks/float/_delay/float_delay.css');
+
+@import url('../blocks/button/button.css');
+
+.app_theme_light {
+    background-color: #d6ccc2;
+}
+
+.app_theme_dark {
+    background-color: #181a1d;
+}

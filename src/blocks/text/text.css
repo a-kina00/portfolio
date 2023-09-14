@@ -1,0 +1,9 @@
+:global(.text) {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+
+    margin: 0;
+}
+

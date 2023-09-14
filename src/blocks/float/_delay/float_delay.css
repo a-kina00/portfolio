@@ -1,0 +1,11 @@
+:global(.float_delay_one) {
+    animation-delay: .2s;
+}
+
+:global(.float_delay_two) {
+    animation-delay: .4s;
+}
+
+:global(.float_delay_three) {
+    animation-delay: .6s;
+}

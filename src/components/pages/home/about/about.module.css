@@ -1,0 +1,27 @@
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+
+    height: 100%;
+
+    padding: 150px 0;
+    text-align: end;
+}
+
+.photo {
+    width: 370px;
+    height: 500px;
+
+    background-image: url('../../../../../public/photo_2023-05-16_18-19-052.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.about {
+    text-align: start;
+
+    max-width: 650px;
+
+    padding: 60px 0;
+}
