@@ -2,8 +2,10 @@ import { useDispatch, useSelector, shallowEqual } from "react-redux";
 import { switchTheme } from '../services/actions/themes';
 
 import Menu from './menu/menu';
+import Modal from "./modal/modal";
 import Heading from './pages/home/heading/heading';
 import About from "./pages/home/about/about";
+import Portfolio from "./pages/home/portfolio/portfolio";
 
 import appStyles from './App.module.css'
 
@@ -53,9 +55,12 @@ function App() {
 
   return (
     <div className={`${appStyles[`app_theme_${currTheme}`]}`}>
+      <Modal />
       <Menu />
       <Heading separateSentence={separateSentence} gitIcon={git} />
       <About />
+      <Portfolio />
+
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector, shallowEqual } from "react-redux";
+import { motion } from "framer-motion"
 
 import aboutStyles from './about.module.css'
 
@@ -27,7 +28,7 @@ function About() {
     }, [currLang])
 
     return (
-        <section className={`${aboutStyles.content}`}>
+        <section id='0' className={`${aboutStyles.content}`}>
             <div className={`${aboutStyles.photo}`} />
             <div className={`${aboutStyles.text}`} >
                 <h2 className={`text text_size_h3 ${`text_theme_${currTheme}`}`}>{name}</h2>
@@ -35,7 +36,12 @@ function About() {
                 <p className={`text text_size_h5 ${`text_theme_${currTheme}`} ${aboutStyles.about}`}>
                     {`" - ${about}"`}
                 </p>
-                <a href='#' className={`text text_size_h5 ${`nav-text_theme_${currTheme}`} link ${aboutStyles.link}`}>{inspect}</a>
+                <motion.div className={`text text_size_h5 link 
+                ${aboutStyles[`link_theme_${currTheme}`]}`}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}>
+                    {inspect}
+                </motion.div>
             </div>
         </section>
     );

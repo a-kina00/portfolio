@@ -1,13 +1,13 @@
 :global(.text_theme_light) {
     color: #3d3a37;
 
-    transition: all .3s linear;
+    transition: all .2s linear;
 }
 
 :global(.text_theme_dark) {
     color: #e0e1dd;
 
-    transition: all .3s linear;
+    transition: all .2s linear;
 }
 
 :global(.text_theme_light .text_size_h6) {
@@ -15,25 +15,5 @@
 }
 
 :global(.text_theme_light .text_size_h5) {
-    font-weight: 600;
-}
-
-:global(.nav-text_theme_light) {
-    color: #b4885c;
-
-    transition: all .3s linear;
-}
-
-:global(.nav-text_theme_dark) {
-    color: #415a77;
-
-    transition: all .3s linear;
-}
-
-:global(.nav-text_theme_light .text_size_h6) {
-    font-weight: 600;
-}
-
-:global(.nav-text_theme_light .text_size_h5) {
     font-weight: 600;
 }

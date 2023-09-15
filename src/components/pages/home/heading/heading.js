@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector, shallowEqual } from "react-redux";
 import lottie from 'lottie-web'
+import { motion } from "framer-motion"
 
 import headingStyles from './heading.module.css'
 
@@ -45,13 +46,18 @@ function Heading(props) {
                 <p className={`text text_size_h6 float_right float_delay_three`}>{'</body>'}</p>
             </div>
             <div className={`${headingStyles.content__buttom}`}>
-                <button className={`button ${`button_theme_${currTheme}`} text text_size_h5 text_theme_dark`}>
+                <motion.button className={`button ${`button_theme_${currTheme}`} text text_size_h5 text_theme_dark ${headingStyles.button}`}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.8 }}>
                     {buttonText[currLang]}
-                </button>
+                </motion.button>
                 <ul className={`${headingStyles.socials}`}>
-                    <a href='https://github.com/a-kina00' target="blank" className={`${headingStyles.socials__social} 
-                    ${currTheme === 'light' ? headingStyles.socials__social_theme_light : headingStyles.socials__social_theme_dark}`}
-                        ref={gitIcon} />
+                    <motion.a href='https://github.com/a-kina00' target="blank" className={`${headingStyles.socials__social} 
+                    ${headingStyles[`socials__social_theme_${currTheme}`]}`}
+                        ref={gitIcon}
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 0.8 }}
+                    />
                 </ul>
             </div>
         </section>

@@ -49,6 +49,13 @@
     margin-top: 20%;
 }
 
+.button {
+    background-color: transparent;
+    
+    width: 270px;
+    height: 100px;
+}
+
 .intro {
     margin-left: 30px;
 }
@@ -83,7 +90,7 @@
 
     border-radius: 50%;
 
-    transition: all .3s linear;
+    transition: all .2s linear;
 }
 
 .socials__social_theme_light {
@@ -92,8 +99,4 @@
 
 .socials__social_theme_dark {
     filter: invert(32%) sepia(50%) saturate(354%) hue-rotate(171deg) brightness(93%) contrast(93%);
-}
-
-.socials__social:hover {
-    scale: 1.2;
 }

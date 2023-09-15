@@ -1,0 +1,114 @@
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    cursor: pointer;
+
+    z-index: 5;
+}
+
+.background_theme_dark {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.background_theme_light {
+    background-color: rgba(94, 82, 79, 0.7);
+}
+
+.window {
+    position: fixed;
+
+    display: flex;
+
+    width: 80vw;
+    height: 60vh;
+
+    margin-top: 10%;
+
+    z-index: 6;
+}
+
+.window_theme_dark {
+    background-color: #232833;
+}
+
+.window_theme_light {
+    background-color: #dacfc4;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+
+    background-position: center;
+    background-size: cover;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+
+    width: 70%;
+
+    padding: 20px;
+}
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0px;
+    column-gap: 20px;
+}
+
+.icon {
+    justify-self: end;
+    align-self: flex-end;
+
+    background-position: center;
+    background-size: cover;
+
+    cursor: pointer;
+
+    width: 70px;
+    height: 70px;
+
+    transition: all .2s linear;
+}
+
+.icon_theme_dark {
+    background-image: url('../../images/icons8-github-480.svg');
+}
+
+.icon_theme_light {
+    background-image: url('../../images/icons8-github-481.svg');
+}
+
+.about {
+    margin-top: 30px;
+    height: 63%;
+}
+
+.btn__try {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    width: 170px;
+    height: 50px;
+
+    text-decoration: none;
+}
+
+.btn__try_theme_dark {
+    background-color: #415a77;
+}
+
+.btn__try_theme_light {
+    background-color: #d4a373;
+}

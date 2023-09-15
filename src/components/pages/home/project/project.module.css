@@ -1,0 +1,84 @@
+.project {
+    position: relative;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-size: cover;
+    background-position: center;
+
+    transition: all .3s linear;
+
+    z-index: 3;
+}
+
+.project:nth-of-type(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.project:nth-of-type(2) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.project:nth-of-type(3) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.project:nth-of-type(4) {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.title {
+    background-image: linear-gradient(rgba(6, 11, 15, 0.8) 30%, transparent);
+    padding: 20px;
+
+    transition: all .2s linear;
+}
+
+.project:hover .title {
+    padding-bottom: 80px;
+}
+
+.technologies {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    height: auto;
+
+    padding: 20px;
+}
+
+.tech {
+    background-color: #d9d9d9;
+    border-radius: 10px;
+
+    white-space: nowrap;
+
+    padding: 3px 6px;
+
+    max-height: min-content;
+}
+
+.icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    background-image: url('../../../../images/2icons8-git.svg');
+    background-position: center;
+    background-size: cover;
+
+opacity: .8;
+
+    width: 25px;
+    height: 25px;
+    z-index: 2;
+}

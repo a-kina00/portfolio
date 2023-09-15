@@ -1,17 +1,12 @@
 :global(.button) {
-    width: 270px;
-    height: 100px;
-
-    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    border: 2px solid;
+    border: 2px solid transparent;
 
-    transition: transform .5s;
-}
-
-:global(.button:not(.button_unactive):hover) {
     cursor: pointer;
-    transform: scale(1.05);
+    transition: all .2s;
 }
 
 :global(.button_theme_light) {

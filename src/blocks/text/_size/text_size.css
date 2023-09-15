@@ -30,6 +30,12 @@
 
 :global(.text_size_h6) {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 22px;
+}
+
+:global(.text_size_h7) {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 18px;
 }

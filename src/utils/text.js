@@ -93,4 +93,11 @@ export const siteText = [
             "eng": "More"
         }
     },
+    {
+        "type": "project",
+        "text": {
+            "ru": ["Задача:", "Технологии:"],
+            "eng": ["Target:", "Technologies:"]
+        }
+    },
 ]

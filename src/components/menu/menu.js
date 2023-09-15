@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector, shallowEqual } from "react-redux";
+import { motion } from "framer-motion"
 
 import { switchLang } from '../../services/actions/language';
 import { switchTheme } from '../../services/actions/themes';
@@ -15,6 +16,13 @@ function Menu() {
     const { currTheme } = useSelector((state) => ({ currTheme: state.currTheme }), shallowEqual);
 
     const menuText = text.find((el) => { return el.type === 'menu' }).text
+    const [current, setCurrent] = React.useState('1');
+
+    const setTab = (tab) => {
+        setCurrent(tab);
+        const element = document.getElementById(tab.target.getAttribute('value'));
+        if (element) element.scrollIntoView({ behavior: "smooth" });
+    };
 
     function changeLang(lang) {
         dispatch(switchLang({ lang: lang }))
@@ -22,10 +30,10 @@ function Menu() {
 
     function changeTheme() {
         switch (currTheme) {
-            case 'light': 
+            case 'light':
                 dispatch(switchTheme({ theme: 'dark' }))
                 return;
-            case 'dark': 
+            case 'dark':
                 dispatch(switchTheme({ theme: 'light' }))
                 return;
             default: break;
@@ -40,14 +48,21 @@ function Menu() {
                 </div>
                 <nav className={`${menuStyles.navigation}`}>
                     {menuText[currLang].map((el, index) => {
-                        return <a href='#' key={index} className={`link text text_size_h6 ${`text_theme_${currTheme}`}`}>{el}</a>
+                        return <motion.p key={index} value={index} onClick={setTab} className={`link text text_size_h6 ${`text_theme_${currTheme}`}`}
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}> {el} </motion.p>
                     })}
-
                 </nav>
                 <div className={`${menuStyles.language} ${`text_theme_${currTheme}`}`}>
-                    <p className={`${currLang === 'ru' ? menuStyles.active : menuStyles.clickable} text text_size_h6`} onClick={() => changeLang('ru')}>Rus</p>
+                    <motion.p className={`${currLang === 'ru' ? menuStyles.active : menuStyles.clickable} text text_size_h6`}
+                        onClick={() => changeLang('ru')}
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}>Rus</motion.p>
                     <p className={`text text_size_h6`}>/</p>
-                    <p className={`${currLang === 'eng' ? menuStyles.active : menuStyles.clickable} text text_size_h6`} onClick={() => changeLang('eng')}>Eng</p>
+                    <motion.p className={`${currLang === 'eng' ? menuStyles.active : menuStyles.clickable} text text_size_h6`}
+                        onClick={() => changeLang('eng')}
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}>Eng</motion.p>
                 </div>
             </div>
         </div>

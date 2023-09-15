@@ -25,3 +25,18 @@
 
     padding: 60px 0;
 }
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.link_theme_light {
+    color: #b4885c;
+}
+
+.link_theme_dark {
+    color: #415a77;
+}

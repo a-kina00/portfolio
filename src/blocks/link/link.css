@@ -9,16 +9,13 @@
 
     text-transform: uppercase;
 
+    cursor: pointer;
     transition: all .3s linear;
     scale: .9;
+
+    max-width: max-content;
 }
 
 :global(.link:hover) {
     background-size: 100% 1px;
-    scale: 1;
-}
-
-:global(.link:focus) {
-    background-size: 100% 1px;
-    scale: 1;
 }
