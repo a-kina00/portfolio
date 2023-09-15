@@ -1,17 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a717f2da.css",
-    "main.js": "/portfolio/static/js/main.1853139c.js",
+    "main.css": "/portfolio/static/css/main.fb6b7840.css",
+    "main.js": "/portfolio/static/js/main.e8d8e45b.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/320009155308211.png": "/portfolio/static/media/320009155308211.623ed6851c717ae8a446.png",
+    "static/media/mesto.png": "/portfolio/static/media/mesto.3ca9ffa69d9a1d334c56.png",
     "static/media/photo_2023-05-16_18-19-052.png": "/portfolio/static/media/photo_2023-05-16_18-19-052.961bd10b92f19fae64f8.png",
+    "static/media/burger.png": "/portfolio/static/media/burger.12698bb1964e1c83c7eb.png",
+    "static/media/cone.png": "/portfolio/static/media/cone.6b650f56e99a3ab10d40.png",
+    "static/media/procharity.png": "/portfolio/static/media/procharity.74fb1080b21441355602.png",
+    "static/media/2icons8-git.svg": "/portfolio/static/media/2icons8-git.199004e6b1d7e7609faa.svg",
+    "static/media/icons8-github-480.svg": "/portfolio/static/media/icons8-github-480.0d9611a669f5a16c2cb8.svg",
+    "static/media/icons8-github-481.svg": "/portfolio/static/media/icons8-github-481.54421a22afcbfb06cae7.svg",
     "index.html": "/portfolio/index.html",
-    "main.a717f2da.css.map": "/portfolio/static/css/main.a717f2da.css.map",
-    "main.1853139c.js.map": "/portfolio/static/js/main.1853139c.js.map",
+    "main.fb6b7840.css.map": "/portfolio/static/css/main.fb6b7840.css.map",
+    "main.e8d8e45b.js.map": "/portfolio/static/js/main.e8d8e45b.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a717f2da.css",
-    "static/js/main.1853139c.js"
+    "static/css/main.fb6b7840.css",
+    "static/js/main.e8d8e45b.js"
   ]
 }
