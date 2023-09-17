@@ -9,8 +9,8 @@ export const siteText = [
     {
         "type": "menu",
         "text": {
-            "ru": ["Обо мне", "Проекты", "Связаться"],
-            "eng": ["About", "Projects", "Contact"]
+            "ru": ["Обо мне", "Проекты"],
+            "eng": ["About", "Projects"]
         }
     },
     {

@@ -44,7 +44,7 @@ function Menu() {
         <div className={`${menuStyles.menu} ${menuStyles[`menu_theme_${currTheme}`]} ${`text_theme_${currTheme}`}`}>
             <div className={`${menuStyles.content}`}>
                 <div>
-                    <p className={`text text_size_h6`} onClick={changeTheme}>theme</p>
+                    <p className={`${menuStyles.theme} text text_size_h6`} onClick={changeTheme}>theme</p>
                 </div>
                 <nav className={`${menuStyles.navigation}`}>
                     {menuText[currLang].map((el, index) => {

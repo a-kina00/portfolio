@@ -36,12 +36,13 @@ function About() {
                 <p className={`text text_size_h5 ${`text_theme_${currTheme}`} ${aboutStyles.about}`}>
                     {`" - ${about}"`}
                 </p>
+                {/* 
                 <motion.div className={`text text_size_h5 link 
                 ${aboutStyles[`link_theme_${currTheme}`]}`}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}>
                     {inspect}
-                </motion.div>
+                </motion.div>*/}
             </div>
         </section>
     );

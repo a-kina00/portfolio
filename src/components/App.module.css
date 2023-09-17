@@ -12,10 +12,21 @@
 
 @import url('../blocks/button/button.css');
 
+
+.app {
+    overflow-x: hidden;
+}
+
 .app_theme_light {
     background-color: #d6ccc2;
 }
 
 .app_theme_dark {
     background-color: #181a1d;
+}
+
+.credits {
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }

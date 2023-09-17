@@ -48,3 +48,7 @@
     gap: 10px;
     text-transform: uppercase;
 }
+
+.theme {
+    cursor: pointer;
+}

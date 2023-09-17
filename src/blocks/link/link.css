@@ -19,3 +19,11 @@
 :global(.link:hover) {
     background-size: 100% 1px;
 }
+
+:global(.link_theme_dark) {
+    color: #415a77;
+}
+
+:global(.link_theme_light) {
+    color: #d4a373;
+}

@@ -10,19 +10,14 @@ function Project({ props }) {
     const dispatch = useDispatch();
     const ref = React.useRef();
 
-    const { text } = useSelector((state) => ({ text: state.text }), shallowEqual);
-    const { currLang } = useSelector((state) => ({ currLang: state.currLang }), shallowEqual);
-    const { currTheme } = useSelector((state) => ({ currTheme: state.currTheme }), shallowEqual);
-
     const hoverSettings = {
         scale: 1.1,
         x: "0",
         y: "0",
         zIndex: "4",
     }
-console.log(window.screen);
+
     const [currPosition, setCurrPosition] = React.useState({})
-    const [targetPosition, setTargetPosition] = React.useState({})
 
     React.useEffect(() => {
         setCurrPosition(ref.current.getBoundingClientRect())

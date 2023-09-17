@@ -3,16 +3,22 @@ import burger_bg from '../images/burger.png'
 import cone_bg from '../images/cone.png'
 import procharity_bg from '../images/procharity.png'
 
+import mesto_vid from '../images/mesto.mp4'
+import burger_vid from '../images/burger.mp4'
+import cone_vid from '../images/cone.mp4'
+import procharity_vid from '../images/procharity.mp4'
+
 export const siteProjects = [
     {
         "id": "0",
         "title": "Mesto",
         "about": {
-            "ru": "представить портфолио путешественника-фотографа. Создание блока с личной информацией о пользователе: аватар, никнейм; и блока с фотографиями, где другие пользователи могут делиться своими снимками и мемами. Реализована функциональность открытия/закрытия окон, валидация форм и добавление/удаление фотографий, добавленных самим пользователем.",
+            "ru": "Представить портфолио путешественника-фотографа. Создание блока с личной информацией о пользователе: аватар, никнейм; и блока с фотографиями, где другие пользователи могут делиться своими снимками и мемами. Реализована функциональность открытия/закрытия окон, валидация форм и добавление/удаление фотографий, добавленных самим пользователем.",
             "eng": "eng"
         },
         "technologies": ["HTML5", "Flexbox", "Grid", "BEM-Nested", "CSS", "JavaScript", "REST API", "Webpack", "Adaptive"],
         "background": mesto_bg,
+        "video": mesto_vid,
         "gh": "https://github.com/a-kina00/mesto-project",
     },
     {
@@ -24,17 +30,19 @@ export const siteProjects = [
         },
         "technologies": ["HTML5", "Flexbox", "Grid", "BEM-Nested", "CSS", "JavaScript", "REST API", "Webpack", "Tagify js", "Cropper js", "Adaptive"],
         "background": procharity_bg,
+        "video": procharity_vid,
         "gh": "https://github.com/lucy2n/ProCharity-project",
     },
     {
         "id": "2",
         "title": "Stellar-Burger",
         "about": {
-            "ru": "создать интерактивный сайт галлактической бургерной. Реализация блока с разнообразными наполнениями блюда, интерактивное меню для более удобного выбора желаемой категории ингредиента, создания конструктора для бургера с возможностью добавлять, сортировать и удалять ингредиенты по желанию.",
+            "ru": "Создать интерактивный сайт галлактической бургерной. Реализация блока с разнообразными наполнениями блюда, интерактивное меню для более удобного выбора желаемой категории ингредиента, создания конструктора для бургера с возможностью добавлять, сортировать и удалять ингредиенты по желанию.",
             "eng": "eng"
         },
         "technologies": ["HTML5", "Flexbox", "Grid", "BEM-Nested", "CSS", "React", "Webpack", "Dnd", "Redux"],
         "background": burger_bg,
+        "video": burger_vid,
         "gh": "https://github.com/a-kina00/react-stellar-burger",
         "gh_pages": "https://a-kina00.github.io/react-stellar-burger/"
     },
@@ -42,11 +50,12 @@ export const siteProjects = [
         "id": "3",
         "title": "Cone",
         "about": {
-            "ru": "",
+            "ru": "Создать 3D визуализацию объекта с возможнотью ручной настройки пользователем его параметров.",
             "eng": "eng"
         },
         "technologies": ["HTML5", "Flexbox", "CSS", "React", "Webpack", "Redux", "Three js fiber"],
         "background": cone_bg,
+        "video": cone_vid,
         "gh": "https://github.com/a-kina00/3Dcone",
         "gh_pages": "https://a-kina00.github.io/3Dcone/"
     },

@@ -46,11 +46,12 @@ function Heading(props) {
                 <p className={`text text_size_h6 float_right float_delay_three`}>{'</body>'}</p>
             </div>
             <div className={`${headingStyles.content__buttom}`}>
-                <motion.button className={`button ${`button_theme_${currTheme}`} text text_size_h5 text_theme_dark ${headingStyles.button}`}
+                <motion.a className={`button ${`button_theme_${currTheme}`} text text_size_h5 text_theme_dark ${headingStyles.button}`}
+                    href='https://hh.ru/resume/c0717397ff0bf29b090039ed1f564c36717539'
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.8 }}>
                     {buttonText[currLang]}
-                </motion.button>
+                </motion.a>
                 <ul className={`${headingStyles.socials}`}>
                     <motion.a href='https://github.com/a-kina00' target="blank" className={`${headingStyles.socials__social} 
                     ${headingStyles[`socials__social_theme_${currTheme}`]}`}
