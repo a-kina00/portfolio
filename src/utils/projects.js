@@ -2,11 +2,13 @@ import mesto_bg from '../images/mesto.png'
 import burger_bg from '../images/burger.png'
 import cone_bg from '../images/cone.png'
 import procharity_bg from '../images/procharity.png'
+import cushion_bg from '../images/cushion.png'
 
 import mesto_vid from '../images/mesto.mp4'
 import burger_vid from '../images/burger.mp4'
 import cone_vid from '../images/cone.mp4'
 import procharity_vid from '../images/procharity.mp4'
+import cushion_vid from '../images/Cushion.mp4'
 
 export const siteProjects = [
     {
@@ -58,5 +60,18 @@ export const siteProjects = [
         "video": cone_vid,
         "gh": "https://github.com/a-kina00/3Dcone",
         "gh_pages": "https://a-kina00.github.io/3Dcone/"
+    },
+    {
+        "id": "4",
+        "title": "Cushion",
+        "about": {
+            "ru": "Создать мобильное приложение по продаже ортопедических сланцев, с рабочим таймером и анимацией переключания цвета товара.",
+            "eng": "eng"
+        },
+        "technologies": ["HTML5", "Flexbox", "CSS", "React", "Webpack", "Redux", "Framer-motion"],
+        "background": cushion_bg,
+        "video": cushion_vid,
+        "gh": "https://github.com/a-kina00/cushion",
+        "gh_pages": "https://a-kina00.github.io/cushion/"
     },
 ]
