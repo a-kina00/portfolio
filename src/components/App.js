@@ -6,6 +6,7 @@ import Modal from "./modal/modal";
 import Heading from './pages/home/heading/heading';
 import About from "./pages/home/about/about";
 import Portfolio from "./pages/home/portfolio/portfolio";
+import Main from "./pages/home/main/main";
 
 import appStyles from './App.module.css'
 
@@ -56,13 +57,10 @@ function App() {
   return (
     <div className={`${appStyles[`app_theme_${currTheme}`]} ${appStyles.app}`}>
       <Modal />
-      <Menu />
-      <Heading separateSentence={separateSentence} gitIcon={git} />
-      <About />
-      <Portfolio />
+      <Main />
       <div className={`${appStyles[`app_theme_${currTheme}`]} ${appStyles.credits}`}>
-      <a className={`link link_theme_${currTheme}`} target="_blank" href="https://icons8.com/icon/v551nqGeHhGn/github">GitHub</a> <p className={`text text_theme_${currTheme}`}>icon by</p> <a  className={`link link_theme_${currTheme}`} target="_blank" href="https://icons8.com">Icons8</a>
-    </div>
+        <a className={`link link_theme_${currTheme}`} target="_blank" href="https://icons8.com/icon/v551nqGeHhGn/github">GitHub</a> <p className={`text text_theme_${currTheme}`}>icon by</p> <a className={`link link_theme_${currTheme}`} target="_blank" href="https://icons8.com">Icons8</a>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,148 @@
+@keyframes gradient {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0px 5px 5px #4444dd);
+    }
+
+    50% {
+        filter: drop-shadow(0 6px 10px rgb(160, 0, 210));
+    }
+
+    100% {
+        filter: drop-shadow(0 0 20px crimson);
+    }
+}
+
+.content {
+    height: 100vh;
+
+    padding: 100px 100px;
+    text-align: end;
+
+    perspective: 800px;
+}
+
+.block {
+    height: 80%;
+    width: 30%;
+    transform: rotateY(10deg);
+    transition: all .2s linear;
+}
+
+.block__content {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(40deg, #396e58, #1e1e24 90%);
+    border: 1px solid white;
+    background-size: 300%;
+    animation: gradient 8s infinite alternate;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.block__main_text {
+    padding-top: 20%;
+}
+
+.block:hover {
+    transform: rotateY(5deg);
+}
+
+.glow {
+    position: absolute;
+    background-color: aliceblue;
+    transform: rotateZ(-30deg);
+    transition: all .2s linear;
+    opacity: .4;
+    mix-blend-mode: hard-light;
+    filter: drop-shadow(0 0 8px white);
+}
+
+.glow__bottom {
+    composes: glow;
+
+    bottom: -45%;
+    left: 20px;
+    height: 100%;
+    width: 20%;
+}
+
+.block:hover .glow__bottom {
+    bottom: -30%;
+    left: 20px;
+    width: 30%;
+    opacity: .2;
+}
+
+.glow__top {
+    composes: glow;
+
+    top: -50%;
+    right: 0px;
+    height: 100%;
+    width: 15%;
+}
+
+.block:hover .glow__top {
+    top: -80%;
+    width: 30%;
+    opacity: .2;
+}
+
+.heading_glow__top {
+    composes: glow;
+
+    top: -20%;
+    right: -20px;
+    height: 100%;
+    width: 15%;
+}
+
+.heading_glow__bottom{
+    composes: glow;
+
+    bottom: -30px;
+    left: -10px;
+    height: 200%;
+    width: 10%;
+}
+
+.block:hover .heading_glow__top {
+    right: -40px;
+    opacity: .1;
+}
+
+.block:hover .heading_glow__bottom {
+    left: 0px;
+    opacity: .1;
+}
+
+.heading {
+    position: absolute;
+    width: 50%;
+    height: 10%;
+    border: 1px solid white;
+    background: linear-gradient(40deg, #396e58 5%, #1e1e24);
+    background-size: 400%;
+    z-index: 2;
+    top: -10px;
+    left: 20px;
+    transition: all .2s linear;
+    animation: glow 8s infinite alternate;
+    animation: gradient 10s infinite alternate;
+    overflow: hidden;
+}
+
+.block:hover .heading {
+    left: 5px;
+}
